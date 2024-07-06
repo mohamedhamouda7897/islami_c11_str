@@ -9,7 +9,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
+        sdfsdf
+          sdfd
+          sdf
+          sdf
 
         title: Text("Islami"),
       ),
