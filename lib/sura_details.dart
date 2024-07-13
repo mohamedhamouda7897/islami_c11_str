@@ -26,20 +26,17 @@ class _SuraDetailsScreenState extends State<SuraDetailsScreen> {
       children: [
         Image.asset("assets/images/main_bg.png"),
         Scaffold(
-          backgroundColor: Colors.transparent,
+
           appBar: AppBar(
-            backgroundColor: Colors.transparent,
-            centerTitle: true,
             title: Text(
               model.suraName,
-              style: GoogleFonts.elMessiri(
-                  fontSize: 30, fontWeight: FontWeight.bold),
+
             ),
           ),
           body: Padding(
             padding: const EdgeInsets.all(18.0),
             child: Card(
-              shape: OutlineInputBorder(
+              shape: const OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.amber),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(25),
