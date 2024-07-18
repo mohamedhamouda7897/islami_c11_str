@@ -52,6 +52,7 @@ class MyThemeData {
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme: AppBarTheme(
           centerTitle: true,
+          iconTheme: IconThemeData(color: Colors.white),
           backgroundColor: Colors.transparent,
           elevation: 0,
           titleTextStyle: GoogleFonts.elMessiri(
@@ -73,11 +74,12 @@ class MyThemeData {
       dividerTheme: DividerThemeData(color: yellowColor, thickness: 3),
       textTheme: TextTheme(
         bodyLarge:
-            GoogleFonts.elMessiri(fontSize: 30, fontWeight: FontWeight.bold),
+            GoogleFonts.elMessiri(fontSize: 30, fontWeight: FontWeight.bold,
+            color:Colors.white),
         bodyMedium:
-            GoogleFonts.elMessiri(fontSize: 25, fontWeight: FontWeight.w500),
+            GoogleFonts.elMessiri(fontSize: 25, fontWeight: FontWeight.w500,color:Colors.white),
         bodySmall:
-            GoogleFonts.elMessiri(fontSize: 20, fontWeight: FontWeight.normal),
+            GoogleFonts.elMessiri(fontSize: 20, fontWeight: FontWeight.normal,color:Colors.white),
       ),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         selectedItemColor: yellowColor,

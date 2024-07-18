@@ -5,6 +5,8 @@ import 'package:islami_c11_str/home/tabs/quran.dart';
 import 'package:islami_c11_str/home/tabs/radio.dart';
 import 'package:islami_c11_str/home/tabs/sebha.dart';
 import 'package:islami_c11_str/home/tabs/settings.dart';
+import 'package:islami_c11_str/providers/my_provider.dart';
+import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = "HOme";
@@ -20,10 +22,14 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var pro = Provider.of<MyProvider>(context);
+
     return Container(
-      decoration: const BoxDecoration(
-          image:
-              DecorationImage(image: AssetImage("assets/images/main_bg.png"))),
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage(pro.themeMode == ThemeMode.dark
+                  ? "assets/images/main_dark_bg.png"
+                  : "assets/images/main_bg.png"))),
       child: Scaffold(
         appBar: AppBar(
           title: const Text(
